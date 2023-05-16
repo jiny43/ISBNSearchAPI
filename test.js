@@ -21,7 +21,9 @@ const URL = `https://www.nl.go.kr/seoji/SearchApi.do?cert_key=1c81199b2a9a2305bc
 fetch(URL)
   .then((response) => response.json())
   .then((data) => {
-    console.log('성공:', data[0]);
+    const dataString = JSON.stringify(data);
+    //JSON데이터를 문자열로 변환
+    console.log(dataString);
   })
   .catch((error) => {
     console.error('실패:', error);

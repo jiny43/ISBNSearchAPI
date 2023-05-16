@@ -40,7 +40,7 @@ postData(`https://www.nl.go.kr/seoji/SearchApi.do?cert_key=1c81199b2a9a2305bc71b
 //JSON 데이터 업로드
 const data = { username: 'example' };
 
-fetch(u, {
+fetch(url, {
   method: 'POST', // 또는 'PUT'
   headers: {
     'Content-Type': 'application/json',
