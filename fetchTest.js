@@ -29,4 +29,4 @@ fetch(URL)
     console.error('실패:', error);
   });
 
-  //fetch 로 get 요청을 보내고, json형식으로 변환하여 받아옴
+  //fetch 로 get 요청을 보내고, json형식으로 변환하여 받아옴->문자열로 변환
