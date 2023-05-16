@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    const ISBNUrl=`https://www.nl.go.kr/NL/search/openApi/search.do?key=1c81199b2a9a2305bc71bb993c45e032794d810adae4c92544bd3d8ac9c2a574&kwd=${Search}`;
+
+  const Search = "삼대천하";  
+    fetch(ISBNUrl)
+    .then(Response=> Response.json())
+    .then(data=> console.log(data));
+
+  </script>
+</body>
+</html>
