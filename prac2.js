@@ -9,12 +9,14 @@ const server = http.createServer((req, res) => {
 
     response.on('data', (chunk) => {
       data += chunk;
+      console.log(data);
     });
 
     response.on('end', () => {
       // res.setHeader('Content-Type', 'application/json');
       res.setHeader('Content-Type', 'text/html');
       res.end(data);
+      
     });
   });
 });
